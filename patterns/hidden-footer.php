@@ -8,8 +8,8 @@
  * @since 1.0.0
  */
 ?>
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}},"backgroundColor":"wappen","layout":{"type":"flex","justifyContent":"left"}} -->
-<div class="wp-block-group has-wappen-background-color has-background" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}},"text":"weiss","backgroundColor":"schwarz","layout":{"type":"flex","justifyContent":"left"}} -->
+<div class="wp-block-group has-schwarz-background-color has-background has-weiss-color" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
 	<!-- wp:paragraph {"fontSize":"small"} -->
 	<p class="has-small-font-size"><?php echo esc_html__( 'Copyright', 'av-huette' ) . ' ' . date_i18n( _x( 'Y', 'copyright date format', 'av-huette' ) ); ?></p>
 	<!-- /wp:paragraph -->

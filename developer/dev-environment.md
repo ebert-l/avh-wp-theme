@@ -13,7 +13,7 @@ If you are using Windows you can use [XAMPP](https://www.apachefriends.org/downl
 Create a new Database and create a user that can access, write and modify the database.
 
 ## Wordpress Install
-Download the [latest Wordpress Installation](https://www.github.org/latestz.tar.gz).
+Download the [latest Wordpress Installation](https://wordpress.org/latest.tar.gz).
 
 Unpack it in the public directory of your webserver.
 If you are using XAMPP this will be `<XAMPP INSTALL DIRECTORY>/htdocs/`
