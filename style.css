@@ -96,8 +96,9 @@ body {
 }
 footer{
 	color:var(--wp--preset--color--grau);
+	padding-bottom:3rem;
+	background-color:var(--wp--preset--color--schwarz)
 }
-
 .avh-footer-huette-name{
 	font-size:3.5rem;
 	letter-spacing:.3em;
