@@ -1,6 +1,6 @@
 /*
-Theme Name: AV-Hütte
-Author: Fresh-R, s&y, Käptn, Alicia
+Theme Name: AV-HÃ¼tte
+Author: Fresh-R, s&y, KÃ¤ptn, Alicia
 Author URI: https://aktivitas-berlin.de
 Theme URI: https://aktivitas-berlin.de
 Tags: full-site-editing, block-patterns
@@ -21,6 +21,10 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	box-sizing: border-box;
 }
 
+:root {
+	--site-header-height:3rem;
+}
+
 html {
 	scroll-behavior: smooth;
 }
@@ -38,7 +42,48 @@ body {
 	font-family: "Inter";
 }
 
-#header a{
+.site-header{
+	--height:var(--site-header-height);
+	padding-inline:1rem;
+}
+.site-header>div>:nth-child(2){
+	margin-right:auto;
+}
+.site-header nav a{
+	--padding:1em;
 	text-decoration: none;
 	font-weight:500;
+	height:var(--height);
+	line-height:calc(var(--height) - var(--padding)*2);
+	position:relative;
+	z-index:1;
+	padding:var(--padding);
+}
+.site-header nav a:hover,
+.site-header nav a:focus,
+.site-header nav a:focus-within{
+	outline:none;
+}
+.site-header nav a::before{
+	content:" ";
+	position:absolute;
+	top:calc(var(--height) * .18);
+	left:0em;
+	height: calc(var(--height) * .6);
+	width:100%;
+	z-index:-1;
+}
+.site-header nav a:hover::before,
+.site-header nav a:focus::before,
+.site-header nav a:focus-within::before{
+	outline:.15em solid var(--wp--preset--color--schwarz);
+}
+.site-header nav a:hover::before,
+.site-header nav a:focus::before{
+	background-color: var(--wp--preset--color--wappen);
+}
+.menu-divider{
+	height:var(--height);
+	width:.1em;
+	background-color: var(--wp--preset--color--schwarz);
 }
