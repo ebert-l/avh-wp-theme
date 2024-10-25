@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Footer
- * Slug: av-huette/hidden-footer
+ * Slug: av-huette/footer
  * Inserter: no
  *
  * @package av-huette

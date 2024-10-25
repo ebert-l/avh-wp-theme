@@ -1,6 +1,6 @@
 /*
-Theme Name: AV-HÃ¼tte
-Author: Fresh-R, s&y, KÃ¤ptn, Alicia
+Theme Name: AV-HÃƒÂ¼tte
+Author: Fresh-R, s&y, KÃƒÂ¤ptn, Alicia
 Author URI: https://aktivitas-berlin.de
 Theme URI: https://aktivitas-berlin.de
 Tags: full-site-editing, block-patterns
@@ -93,4 +93,16 @@ body {
 	height:var(--height);
 	width:.1em;
 	background-color: var(--wp--preset--color--schwarz);
+}
+
+.avh-footer-huette-name{
+	font-size:4rem;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	padding:3rem 0;
+	border-bottom:.2rem solid var(--wp--preset--color--grau);
+	color:var(--wp--preset--color--grau);
+	text-transform:uppercase;
+	font-weight:600;
 }
