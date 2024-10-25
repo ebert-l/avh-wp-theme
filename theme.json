@@ -278,7 +278,7 @@
 					"text": "var(--wp--preset--color--weiss)"
 				},
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--small)",
+					"fontSize": "var(--wp--preset--font-size--normal)",
 					"fontWeight": "500"
 				},
 				"shadow": "none",

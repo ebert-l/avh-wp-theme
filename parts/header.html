@@ -1,13 +1,8 @@
-<!-- wp:group {"align":"wide","className":"has-inter-font-family","backgroundColor":"weiss","layout":{"type":"flex","justifyContent":"space-between","flexWrap":"wrap"}} -->
-<div class="wp-block-group alignwide has-inter-font-family has-weiss-background-color has-background" id="header">
-	<!-- wp:group {"layout":{"type":"flex"}} -->
-	<div class="wp-block-group">
-		<!-- wp:image {"id":27,"width":"52px","height":"auto","sizeSlug":"full","linkDestination":"none"} -->
-		<figure class="wp-block-image size-full">
-			<img src="http://localhost/avh/wp-content/uploads/2024/10/avh_logo_small.webp" alt="" class="wp-image-27" style="width:52px;height:auto"/>
-		</figure>
-	<!-- /wp:image -->
-	</div>
+<!-- wp:group {"align":"wide","className":"has-inter-font-family","backgroundColor":"weiss","layout":{"type":"flex","justifyContent":"right","flexWrap":"wrap"}} -->
+<div class="wp-block-group alignwide has-inter-font-family has-weiss-background-color has-background" id="header"><!-- wp:group {"layout":{"type":"flex"}} -->
+	<div id="logo" class="wp-block-group"><!-- wp:image {"id":27,"sizeSlug":"full","linkDestination":"none"} -->
+	<figure class="wp-block-image size-full"><img src="http://localhost/avh/wp-content/uploads/2024/10/avh_logo_small.webp" alt="" class="wp-image-27" /></figure>
+	<!-- /wp:image --></div>
 	<!-- /wp:group -->
 	
 	<!-- wp:separator {"className":"menu-divider","style":{"spacing":{"margin":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}},"backgroundColor":"schwarz"} -->
@@ -16,9 +11,13 @@
 	
 	<!-- wp:navigation {"ref":4,"overlayBackgroundColor":"wappen","overlayTextColor":"contrast"} /-->
 	
+	<!-- wp:separator {"className":"menu-divider","style":{"spacing":{"margin":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}},"backgroundColor":"schwarz"} -->
+	<hr class="wp-block-separator has-text-color has-schwarz-color has-alpha-channel-opacity has-schwarz-background-color has-background menu-divider" style="margin-top:var(--wp--preset--spacing--20);margin-bottom:var(--wp--preset--spacing--20)"/>
+	<!-- /wp:separator -->
+	
 	<!-- wp:buttons -->
-	<div class="wp-block-buttons"><!-- wp:button -->
-	<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Intern</a></div>
+	<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-fill"} -->
+	<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button">Intern</a></div>
 	<!-- /wp:button --></div>
 	<!-- /wp:buttons --></div>
 	<!-- /wp:group -->

@@ -24,3 +24,16 @@ function av_huette_styles() {
 	);
 }
 add_action( 'wp_enqueue_scripts', 'av_huette_styles' );
+
+
+
+function avh_setup() {
+	add_editor_style( array(
+		get_stylesheet_uri(),
+		get_theme_file_uri( 'assets/css/editor-styles.css' )
+	) );
+	add_editor_style( array(
+		get_stylesheet_uri()
+	) );
+}
+add_action( 'after_setup_theme', 'avh_setup' );

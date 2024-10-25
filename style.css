@@ -46,6 +46,13 @@ body {
 	--height:var(--site-header-height);
 	padding-inline:1rem;
 }
+#logo{
+	height:var(--height);
+}
+#logo img {
+	height:var(--height);
+	object-fit:contain;
+}
 .site-header>div>:nth-child(2){
 	margin-right:auto;
 }
@@ -67,9 +74,9 @@ body {
 .site-header nav a::before{
 	content:" ";
 	position:absolute;
-	top:calc(var(--height) * .18);
+	top:calc(var(--height) * 0);
 	left:0em;
-	height: calc(var(--height) * .6);
+	height: calc(var(--height) * 1);
 	width:100%;
 	z-index:-1;
 }
