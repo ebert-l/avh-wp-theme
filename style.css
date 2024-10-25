@@ -94,15 +94,35 @@ body {
 	width:.1em;
 	background-color: var(--wp--preset--color--schwarz);
 }
+footer{
+	color:var(--wp--preset--color--grau);
+}
 
 .avh-footer-huette-name{
-	font-size:4rem;
+	font-size:3.5rem;
+	letter-spacing:.3em;
 	display:flex;
 	align-items:center;
 	justify-content:center;
-	padding:3rem 0;
+	padding:5rem 0;
 	border-bottom:.2rem solid var(--wp--preset--color--grau);
 	color:var(--wp--preset--color--grau);
 	text-transform:uppercase;
 	font-weight:600;
+}
+.avh-footer-content{
+	max-width:1300px;
+	margin:0 auto;
+}
+
+.avh-footer-subline{
+	display:block;
+	width:100%;
+	border-top:.2em solid var(--wp--preset--color--grau);
+}
+.avh-footer-headline-has-subline{
+	width:100%;
+}
+.avh-footer-headline-has-subline p{
+	margin-top:0;
 }

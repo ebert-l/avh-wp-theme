@@ -29,6 +29,11 @@
 					"name": "Highlight"
 				},
 				{
+					"slug": "grau",
+					"color": "#959595",
+					"name": "Grau"
+				},
+				{
 					"slug": "transparent",
 					"color": "transparent",
 					"name": "Transparent"
