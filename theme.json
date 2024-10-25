@@ -71,19 +71,18 @@
 			"fluid": true,
 			"fontFamilies": [
 				{
-					"name": "System",
-					"slug": "system",
-					"fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif"
-				},
-				{
-					"name": "Serif",
-					"slug": "serif",
-					"fontFamily": "\"Times New Roman\",\"New York\",Times,\"Noto Serif\",serif"
-				},
-				{
-					"name": "Monospace",
-					"slug": "monospace",
-					"fontFamily": "Consolas,Menlo,Monaco,\"SF Mono\",\"DejaVu Sans Mono\",\"Roboto Mono\",\"Courier New\",Courier,monospace"
+					"name": "Inter",
+					"slug": "inter",
+					"fontFamily": "Inter",
+					"fontFace": [
+						{
+							"fontFamily": "Inter",
+							"fontWeight": "200 300 500 800",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": ["file:./assets/fonts/inter/Inter.woff2"]
+						}
+					]
 				}
 			],
 			"fontSizes": [
