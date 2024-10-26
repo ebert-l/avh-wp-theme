@@ -131,6 +131,22 @@
 							"fontFamily": "Inter",
 							"name": "Inter",
 							"slug": "inter"
+						},
+						{
+							"fontFace": [
+								{
+									"fontFamily": "KantumruyPro",
+									"fontStretch": "normal",
+									"fontStyle": "normal",
+									"fontWeight": "200 300 500 700",
+									"src": [
+										"file:./assets/fonts/KantumruyPro/KantumruyPro.woff"
+									]
+								}
+							],
+							"fontFamily": "KantumruyPro",
+							"name": "KantumruyPro",
+							"slug": "kantumruyPro"
 						}
 					],
 					"fontSizes": [
@@ -255,7 +271,24 @@
 					"fontFamily": "Inter",
 					"name": "Inter",
 					"slug": "inter"
+				},						
+				{
+					"fontFace": [
+						{
+							"fontFamily": "KantumruyPro",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "200 300 500 700",
+							"src": [
+								"file:./assets/fonts/KantumruyPro/KantumruyPro.woff"
+							]
+						}
+					],
+					"fontFamily": "KantumruyPro",
+					"name": "KantumruyPro",
+					"slug": "kantumruyPro"
 				}
+
 			],
 			"fontSizes": [
 				{
@@ -305,22 +338,22 @@
 		"blocks": {
 			"core/archives": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--inter)"
+					"fontFamily": "var(--wp--preset--font-family--kantumruyPro)"
 				}
 			},
 			"core/button": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--inter)"
+					"fontFamily": "var(--wp--preset--font-family--kantumruyPro)"
 				}
 			},
 			"core/calendar": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--inter)"
+					"fontFamily": "var(--wp--preset--font-family--kantumruyPro)"
 				}
 			},
 			"core/categories": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--inter)"
+					"fontFamily": "var(--wp--preset--font-family--kantumruyPro)"
 				}
 			},
 			"core/code": {
@@ -328,7 +361,7 @@
 					"text": "var(--wp--preset--color--schwarz)"
 				},
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--inter)"
+					"fontFamily": "var(--wp--preset--font-family--kantumruyPro)"
 				}
 			},
 			"core/comment-author-name": {
@@ -353,17 +386,17 @@
 			},
 			"core/details": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--inter)"
+					"fontFamily": "var(--wp--preset--font-family--kantumruyPro)"
 				}
 			},
 			"core/file": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--inter)"
+					"fontFamily": "var(--wp--preset--font-family--kantumruyPro)"
 				}
 			},
 			"core/group": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--inter)"
+					"fontFamily": "var(--wp--preset--font-family--kantumruyPro)"
 				}
 			},
 			"core/heading": {
@@ -373,27 +406,27 @@
 			},
 			"core/home-link": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--inter)"
+					"fontFamily": "var(--wp--preset--font-family--kantumruyPro)"
 				}
 			},
 			"core/image": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--inter)"
+					"fontFamily": "var(--wp--preset--font-family--kantumruyPro)"
 				}
 			},
 			"core/latest-comments": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--inter)"
+					"fontFamily": "var(--wp--preset--font-family--kantumruyPro)"
 				}
 			},
 			"core/latest-posts": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--inter)"
+					"fontFamily": "var(--wp--preset--font-family--kantumruyPro)"
 				}
 			},
 			"core/list": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--inter)"
+					"fontFamily": "var(--wp--preset--font-family--kantumruyPro)"
 				}
 			},
 			"core/navigation": {
@@ -437,12 +470,12 @@
 			},
 			"core/page-list": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--inter)"
+					"fontFamily": "var(--wp--preset--font-family--kantumruyPro)"
 				}
 			},
 			"core/paragraph": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--inter)"
+					"fontFamily": "var(--wp--preset--font-family--kantumruyPro)"
 				}
 			},
 			"core/post-author-name": {
@@ -499,7 +532,7 @@
 			},
 			"core/preformatted": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--inter)"
+					"fontFamily": "var(--wp--preset--font-family--kantumruyPro)"
 				}
 			},
 			"core/pullquote": {
@@ -522,33 +555,33 @@
 			"core/search": {
 				"css": ".wp-block-search__button-inside .wp-block-search__inside-wrapper{border: none;}",
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--inter)",
+					"fontFamily": "var(--wp--preset--font-family--kantumruyPro)",
 					"lineHeight": "1"
 				}
 			},
 			"core/site-tagline": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--inter)"
+					"fontFamily": "var(--wp--preset--font-family--kantumruyPro)"
 				}
 			},
 			"core/site-title": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--inter)"
+					"fontFamily": "var(--wp--preset--font-family--kantumruyPro)"
 				}
 			},
 			"core/table": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--inter)"
+					"fontFamily": "var(--wp--preset--font-family--kantumruyPro)"
 				}
 			},
 			"core/tag-cloud": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--inter)"
+					"fontFamily": "var(--wp--preset--font-family--kantumruyPro)"
 				}
 			},
 			"core/verse": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--inter)"
+					"fontFamily": "var(--wp--preset--font-family--kantumruyPro)"
 				}
 			},
 			"core/video": {
@@ -557,7 +590,7 @@
 				},
 				"css": "",
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--inter)"
+					"fontFamily": "var(--wp--preset--font-family--kantumruyPro)"
 				}
 			}
 		},
