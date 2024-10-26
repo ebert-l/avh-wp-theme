@@ -153,8 +153,8 @@ a::after {
     right: 10px; /* Positionierung des Pfeils rechts vom Text */
     top: 50%; /* Zentrierung auf der Y-Achse */
     transform: translateY(-50%); /* Exakte vertikale Zentrierung */
-    width: 18px; /* PfeilgrÃ¶ÃŸe nach Bedarf anpassen */
-    height: 18px;
+    width: 1em; /* Pfeilgröße nach Bedarf anpassen */
+    height: 1em;
     filter: invert(100%);
 }
 .avh-page-hero{
