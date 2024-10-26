@@ -127,3 +127,25 @@ footer{
 .avh-footer-headline-has-subline p{
 	margin-top:0;
 }
+
+/* Styling für Links */
+a {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit; /* Beibehaltung der Textfarbe */
+    padding-right: 40px; /* Platz für den Pfeil rechts */
+}
+
+/* Pfeil als Base64-Bild im ::after-Pseudo-Element */
+a::after {
+    content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABLklEQVRoge3a0W2DMBQF0EPVEdI56BDtDl2qE7UdInMkO6Qf+aiSQIODsZ8RV+LHsux3ZGyEoDudTtaQp9oF5MoGiZbVQJ5H2qOfAN11w2pWZINEywaJltVDukLXKw5LQkqkxxdecgxWC5IVQR1IdgTlIYsgKAtJQRxTBy8FSUW8pU5QAvIIYp86ydKQIgjG30dypMc3dhP6zkKw3IoURbAMpDiC/JAqCPJCqiHIB6mKIA+kOoL5kBAI5kHCIHgcEgrBY5BwCNIhIRGkQcIimA4JjWAaJDyC+5AmEPwPaQbBOKQpBMOQ5hDcQppEcAlpFsEl5FOjCC4hH+4XFxIB3dW/KDvn26sf6BsWwe1mHys2NILh4/eId39Fh0cw/kA8OGN+NIDgdo80m9V81f0FHpxse0KFHCsAAAAASUVORK5CYII=');
+    position: absolute;
+    right: 10px; /* Positionierung des Pfeils rechts vom Text */
+    top: 50%; /* Zentrierung auf der Y-Achse */
+    transform: translateY(-50%); /* Exakte vertikale Zentrierung */
+    width: 18px; /* Pfeilgröße nach Bedarf anpassen */
+    height: 18px;
+    filter: invert(100%);
+}
