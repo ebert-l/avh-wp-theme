@@ -22,6 +22,15 @@ function av_huette_styles() {
 		[],
 		wp_get_theme()->get( 'Version' )
 	);
+	wp_enqueue_script(
+		'av-huette-script',
+		get_theme_file_uri( 'assets/js/avh-frontend.js' ),
+		array(),
+		wp_get_theme()->get( 'Version' ),
+		array(
+			'strategy'  => 'defer',
+		)
+	);
 }
 add_action( 'wp_enqueue_scripts', 'av_huette_styles' );
 
