@@ -148,6 +148,7 @@ a::after {
     width: 18px; /* Pfeilgröße nach Bedarf anpassen */
     height: 18px;
     filter: invert(100%);
+}
 .avh-page-hero{
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
