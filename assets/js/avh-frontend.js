@@ -31,3 +31,11 @@ function openHeaderSubMenu(menuIndex){
     subMenu.classList.remove("hideonfrontend");
     subMenu.setAttribute("aria-hidden", "false");
 }
+
+
+/***
+ * Text Scroller Scripts
+ */
+let textScrollers = document.getElementsByClassName("avh-text-scroller");
+// ToDo: Listen to scroll Event
+// ToDo: change left position according to viewport position

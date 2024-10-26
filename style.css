@@ -1,6 +1,6 @@
 /*
-Theme Name: AV-HÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼tte
-Author: Fresh-R, s&y, KÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¤ptn, Alicia
+Theme Name: AV-Huette
+Author: Fresh-R, s&y, Kaeptn, Alicia
 Author URI: https://aktivitas-berlin.de
 Theme URI: https://aktivitas-berlin.de
 Tags: full-site-editing, block-patterns
@@ -268,4 +268,22 @@ a::after {
 	background:#00000000;
 	border-right:clamp(50px, 5vw, 100px) solid var(--wp--preset--color--wappen);
 	border-top:clamp(50px, 5vw, 100px) solid transparent;
+}
+
+.avh-text-scroller{
+	padding:1em;
+	overflow:hidden;
+}
+.avh-text-scroller > p{
+	position:relative;
+	padding: 0;
+	animation: forwards infinite scrollLeft 10s linear;
+}
+@keyframes scrollLeft {
+	0% {
+		left:100%;
+	}
+	100%{
+		left:-100%;
+	}
 }

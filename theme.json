@@ -271,7 +271,7 @@
 					"fontFamily": "Inter",
 					"name": "Inter",
 					"slug": "inter"
-				},						
+				},
 				{
 					"fontFace": [
 						{
@@ -288,7 +288,6 @@
 					"name": "KantumruyPro",
 					"slug": "kantumruyPro"
 				}
-
 			],
 			"fontSizes": [
 				{
