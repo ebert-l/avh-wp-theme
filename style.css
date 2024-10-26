@@ -1,6 +1,6 @@
 /*
-Theme Name: AV-HÃƒÂ¼tte
-Author: Fresh-R, s&y, KÃƒÂ¤ptn, Alicia
+Theme Name: AV-HÃƒÆ’Ã‚Â¼tte
+Author: Fresh-R, s&y, KÃƒÆ’Ã‚Â¤ptn, Alicia
 Author URI: https://aktivitas-berlin.de
 Theme URI: https://aktivitas-berlin.de
 Tags: full-site-editing, block-patterns
@@ -148,4 +148,45 @@ a::after {
     width: 18px; /* Pfeilgröße nach Bedarf anpassen */
     height: 18px;
     filter: invert(100%);
+.avh-page-hero{
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(7, 1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	height:clamp(40rem, 90vh, 70rem);
+	overflow:hidden;
+}
+.avh-page-hero-image{
+	display: flex;
+	grid-column-start: 1;
+	grid-column-end: 13;
+	grid-row-start: 1;
+	grid-row-end: 12;
+	z-index:-1;
+	filter:brightness(.8);
+	position:relative;
+	width:100%;
+}
+.avh-page-hero-image::before{
+	position:absolute;
+	content:"";
+	inset:0;
+	background:linear-gradient(90deg, rgba(0, 0, 0 , .4) 30%, rgba(0, 0, 0 , 0) 85%);
+	z-index:1;
+}
+.avh-page-hero-title{
+	grid-column-start: 2;
+	grid-column-end: 9;
+	grid-row-start: 2;
+	grid-row-end: 10;
+	font-size:clamp(5rem, 10vw, 10rem);
+	font-weight:200;
+	text-transform:uppercase;
+	color:var(--wp--preset--color--weiss);
+	line-height:1em;
+	text-overflow:" ";
+}
+.avh-page-subline{
+	
 }
