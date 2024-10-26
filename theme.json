@@ -639,8 +639,10 @@
 		},
 		"spacing": {
 			"padding": {
-				"left": "var(--wp--preset--spacing--50)",
-				"right": "var(--wp--preset--spacing--50)"
+				"bottom": "0px",
+				"left": "0",
+				"right": "0",
+				"top": "0px"
 			}
 		},
 		"typography": {
