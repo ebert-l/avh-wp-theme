@@ -148,14 +148,17 @@ a {
 
 /* Pfeil als Base64-Bild im ::after-Pseudo-Element */
 a::after {
-    content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABLklEQVRoge3a0W2DMBQF0EPVEdI56BDtDl2qE7UdInMkO6Qf+aiSQIODsZ8RV+LHsux3ZGyEoDudTtaQp9oF5MoGiZbVQJ5H2qOfAN11w2pWZINEywaJltVDukLXKw5LQkqkxxdecgxWC5IVQR1IdgTlIYsgKAtJQRxTBy8FSUW8pU5QAvIIYp86ydKQIgjG30dypMc3dhP6zkKw3IoURbAMpDiC/JAqCPJCqiHIB6mKIA+kOoL5kBAI5kHCIHgcEgrBY5BwCNIhIRGkQcIimA4JjWAaJDyC+5AmEPwPaQbBOKQpBMOQ5hDcQppEcAlpFsEl5FOjCC4hH+4XFxIB3dW/KDvn26sf6BsWwe1mHys2NILh4/eId39Fh0cw/kA8OGN+NIDgdo80m9V81f0FHpxse0KFHCsAAAAASUVORK5CYII=');
+    content: "";
     position: absolute;
-    right: 10px; /* Positionierung des Pfeils rechts vom Text */
+    right: -0.2em; /* Positionierung des Pfeils rechts vom Text */
     top: 50%; /* Zentrierung auf der Y-Achse */
     transform: translateY(-50%); /* Exakte vertikale Zentrierung */
-    width: 1em; /* Pfeilgröße nach Bedarf anpassen */
+    width: 1em; /* PfeilgrÃ¶ÃŸe nach Bedarf anpassen */
     height: 1em;
-    filter: invert(100%);
+	mix-blend-mode: difference;
+	background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABLklEQVRoge3a0W2DMBQF0EPVEdI56BDtDl2qE7UdInMkO6Qf+aiSQIODsZ8RV+LHsux3ZGyEoDudTtaQp9oF5MoGiZbVQJ5H2qOfAN11w2pWZINEywaJltVDukLXKw5LQkqkxxdecgxWC5IVQR1IdgTlIYsgKAtJQRxTBy8FSUW8pU5QAvIIYp86ydKQIgjG30dypMc3dhP6zkKw3IoURbAMpDiC/JAqCPJCqiHIB6mKIA+kOoL5kBAI5kHCIHgcEgrBY5BwCNIhIRGkQcIimA4JjWAaJDyC+5AmEPwPaQbBOKQpBMOQ5hDcQppEcAlpFsEl5FOjCC4hH+4XFxIB3dW/KDvn26sf6BsWwe1mHys2NILh4/eId39Fh0cw/kA8OGN+NIDgdo80m9V81f0FHpxse0KFHCsAAAAASUVORK5CYII=');
+	background-size:contain;
+	background-repeat: no-repeat;
 }
 .avh-page-hero{
 	display: grid;
