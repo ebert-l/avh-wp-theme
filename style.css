@@ -1,6 +1,6 @@
 /*
-Theme Name: AV-HÃƒÆ’Ã‚Â¼tte
-Author: Fresh-R, s&y, KÃƒÆ’Ã‚Â¤ptn, Alicia
+Theme Name: AV-HÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼tte
+Author: Fresh-R, s&y, KÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¤ptn, Alicia
 Author URI: https://aktivitas-berlin.de
 Theme URI: https://aktivitas-berlin.de
 Tags: full-site-editing, block-patterns
@@ -22,7 +22,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 }
 
 :root {
-	--site-header-height:3rem;
+	--avh-header-height:3rem;
 }
 
 html {
@@ -41,10 +41,16 @@ body {
 	-webkit-font-smoothing: antialiased;
 	font-family: "Inter";
 }
+.none,
+.hideonfrontend{
+	display:none !important;
+}
 
 .site-header{
-	--height:var(--site-header-height);
-	padding-inline:1rem;
+	--height:var(--avh-header-height);
+	--inline-padding: 1rem;
+	padding-inline:var(--inline-padding);
+	position:relative;
 }
 #logo{
 	height:var(--height);
@@ -56,7 +62,7 @@ body {
 .site-header>div>:nth-child(2){
 	margin-right:auto;
 }
-.site-header nav a{
+.avh-header-menu a{
 	--padding:1em;
 	text-decoration: none;
 	font-weight:500;
@@ -65,13 +71,15 @@ body {
 	position:relative;
 	z-index:1;
 	padding:var(--padding);
+	text-transform:uppercase;
+	letter-spacing:.1em;
 }
-.site-header nav a:hover,
-.site-header nav a:focus,
-.site-header nav a:focus-within{
+.avh-header-menu a:hover,
+.avh-header-menu a:focus,
+.avh-header-menu a:focus-within{
 	outline:none;
 }
-.site-header nav a::before{
+.avh-header-menu a::before{
 	content:" ";
 	position:absolute;
 	top:calc(var(--height) * 0);
@@ -80,13 +88,13 @@ body {
 	width:100%;
 	z-index:-1;
 }
-.site-header nav a:hover::before,
-.site-header nav a:focus::before,
-.site-header nav a:focus-within::before{
+.avh-header-menu a:hover::before,
+.avh-header-menu a:focus::before,
+.avh-header-menu a:focus-within::before{
 	outline:.15em solid var(--wp--preset--color--schwarz);
 }
-.site-header nav a:hover::before,
-.site-header nav a:focus::before{
+.avh-header-menu a:hover::before,
+.avh-header-menu a:focus::before{
 	background-color: var(--wp--preset--color--wappen);
 }
 .menu-divider{
@@ -157,6 +165,7 @@ a::after {
 	grid-row-gap: 0px;
 	height:clamp(40rem, 90vh, 70rem);
 	overflow:hidden;
+	margin-top:0;
 }
 .avh-page-hero-image{
 	display: flex;
@@ -190,4 +199,65 @@ a::after {
 }
 .avh-page-subline{
 	
+}
+
+.avh-header-submenu{
+	border-top:.15rem solid var(--wp--preset--color--grau);
+	gap:3rem;
+	padding-block:4rem;
+	position:absolute;
+	width:calc(100% - var(--inline-padding) * 2 );
+	z-index:1;
+	background-color:var(--wp--preset--color--weiss);
+	margin:0;
+	isolation:isolate;
+}
+.avh-header-submenu-info{
+	display:flex;
+	flex-direction:column;
+	height:100%;
+}
+.avh-header-submenu-info-text{
+	text-align:center;
+}
+.avh-header-submenu-menu{
+	gap:.5em;
+}
+.avh-header-submenu-menu a{
+	text-decoration:none;
+	text-transform:uppercase;
+	padding:.3em .9em;
+	letter-spacing:.1em;
+}
+.avh-header-submenu-menu a:hover,
+.avh-header-submenu-menu a:focus{
+	background-color:var(--wp--preset--color--wappen);
+}
+.avh-header-submenu-image-image{
+	width:clamp(150px, 50%, 350px);
+	position:relative;
+}
+.avh-header-submenu-image-image::before{
+	position:absolute;
+	display:block;
+	content:" ";
+	top:clamp(-20px, -1vw, -10px);
+	left:clamp(-20px, -1vw, -10px);
+	width:20%;
+	aspect-ratio:1;
+	background:transparent;
+	border-top:clamp(50px, 5vw, 100px) solid var(--wp--preset--color--wappen);
+	border-right:clamp(50px, 5vw, 100px) solid transparent;
+}
+.avh-header-submenu-image-image::after{
+	position:absolute;
+	display:block;
+	content:" ";
+	bottom:clamp(-20px, -1vw, -10px);
+	right:clamp(-20px, -1vw, -10px);
+	width:20%;
+	aspect-ratio:1;
+	background:#00000000;
+	border-right:clamp(50px, 5vw, 100px) solid var(--wp--preset--color--wappen);
+	border-top:clamp(50px, 5vw, 100px) solid transparent;
 }
