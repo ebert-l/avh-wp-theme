@@ -1,3 +1,6 @@
 /* *{
     border:1px solid red;
 } */
+.hideonfrontend.avh-header-submenu{
+    display:flex !important;
+}
