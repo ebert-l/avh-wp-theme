@@ -41,13 +41,15 @@ body {
 	-webkit-font-smoothing: antialiased;
 	font-family: "Inter";
 }
-.none{
+.none,
+.hideonfrontend{
 	display:none !important;
 }
 
 .site-header{
 	--height:var(--avh-header-height);
-	padding-inline:1rem;
+	--inline-padding: 1rem;
+	padding-inline:var(--inline-padding);
 	position:relative;
 }
 #logo{
@@ -181,11 +183,12 @@ footer{
 	border-top:.15rem solid var(--wp--preset--color--grau);
 	gap:3rem;
 	padding-block:4rem;
-	position:fixed;
-	background-color:var(--wp--preset--color--weiss);
+	position:absolute;
+	width:calc(100% - var(--inline-padding) * 2 );
 	z-index:1;
-	width:100%;
+	background-color:var(--wp--preset--color--weiss);
 	margin:0;
+	isolation:isolate;
 }
 .avh-header-submenu-info{
 	display:flex;
@@ -232,7 +235,7 @@ footer{
 	right:clamp(-20px, -1vw, -10px);
 	width:20%;
 	aspect-ratio:1;
-	background:transparent;
+	background:#00000000;
 	border-right:clamp(50px, 5vw, 100px) solid var(--wp--preset--color--wappen);
 	border-top:clamp(50px, 5vw, 100px) solid transparent;
 }

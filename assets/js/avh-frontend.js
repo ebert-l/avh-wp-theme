@@ -12,6 +12,7 @@ function closeHeaderSubMenu(){
         subMenu.setAttribute("aria-hidden", "true");
     }
 }
+closeHeaderSubMenu();
 
 let headerMainNavigation = document.getElementsByClassName("avh-header-menu")[0].getElementsByTagName("a");
 for(let menuPointIndex = 0; menuPointIndex < headerMainNavigation.length; menuPointIndex++){
@@ -27,5 +28,6 @@ function openHeaderSubMenu(menuIndex){
     closeHeaderSubMenu();
     let subMenu = headerSubMenus[menuIndex];
     subMenu.classList.remove("none");
+    subMenu.classList.remove("hideonfrontend");
     subMenu.setAttribute("aria-hidden", "false");
 }
