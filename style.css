@@ -1,6 +1,6 @@
 /*
-Theme Name: AV-HÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼tte
-Author: Fresh-R, s&y, KÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¤ptn, Alicia
+Theme Name: AV-HÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼tte
+Author: Fresh-R, s&y, KÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¤ptn, Alicia
 Author URI: https://aktivitas-berlin.de
 Theme URI: https://aktivitas-berlin.de
 Tags: full-site-editing, block-patterns
@@ -136,14 +136,14 @@ footer{
 	margin-top:0;
 }
 
-/* Styling für Links */
+/* Styling fÃ¼r Links */
 a {
     position: relative;
     display: inline-flex;
     align-items: center;
     text-decoration: none;
     color: inherit; /* Beibehaltung der Textfarbe */
-    padding-right: 40px; /* Platz für den Pfeil rechts */
+    padding-right: 40px; /* Platz fÃ¼r den Pfeil rechts */
 }
 
 /* Pfeil als Base64-Bild im ::after-Pseudo-Element */
@@ -153,7 +153,7 @@ a::after {
     right: 10px; /* Positionierung des Pfeils rechts vom Text */
     top: 50%; /* Zentrierung auf der Y-Achse */
     transform: translateY(-50%); /* Exakte vertikale Zentrierung */
-    width: 18px; /* Pfeilgröße nach Bedarf anpassen */
+    width: 18px; /* PfeilgrÃ¶ÃŸe nach Bedarf anpassen */
     height: 18px;
     filter: invert(100%);
 }
@@ -237,6 +237,13 @@ a::after {
 	width:clamp(150px, 50%, 350px);
 	position:relative;
 }
+.avh-header-submenu-image-image img{
+	transform:scale(1) rotate(0deg);
+	transition:transform 200ms ease;
+}
+.avh-header-submenu-image-image:hover img{
+	transform:scale(1.05) rotate(2deg);
+}
 .avh-header-submenu-image-image::before{
 	position:absolute;
 	display:block;
@@ -248,6 +255,7 @@ a::after {
 	background:transparent;
 	border-top:clamp(50px, 5vw, 100px) solid var(--wp--preset--color--wappen);
 	border-right:clamp(50px, 5vw, 100px) solid transparent;
+	z-index:1;
 }
 .avh-header-submenu-image-image::after{
 	position:absolute;
